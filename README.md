@@ -8,6 +8,7 @@ Of special note is the `mail` directory, where you can find a working config bas
 * Notmuch
 * Msmtp
 * Mutt
+
 It will allow you to A) locally backup all the mail in your Gmail account, and if you're so inclined, B) use Mutt as terminal-based email client, running off your now-locally-stored email repository.
 
 # Install
