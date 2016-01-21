@@ -1,0 +1,47 @@
+[general]
+ui = basic
+accounts = gmail-personal
+pythonfile = ~/.offlineimap.py
+maxsyncaccounts = 3
+
+[Account gmail-personal]
+localrepository = gmaillocal-personal
+remoterepository = gmailserver-personal
+synclabels = yes
+labelsheader = X-Keywords
+status_backend=sqlite
+postsynchook = notmuch new
+
+[Repository gmailserver-personal]
+type = Gmail
+remotepasseval = get_password(account="natalie.pendragon@gmail.com", server="imap.gmail.com")
+remoteuser = natalie.pendragon@gmail.com
+auth_mechanisms = LOGIN
+realdelete = yes
+ssl=true
+sslcacertfile = /usr/local/etc/openssl/cert.pem
+maxconnections = 1
+nametrans = lambda folder: {'[Gmail]/Drafts':    'drafts',
+                            'INBOX':             'inbox',
+                            '[Gmail]/Sent Mail': 'sent',
+                            '[Gmail]/Starred':   'flagged',
+			    '[Gmail]/Trash':     'trash',
+                            '[Gmail]/All Mail':  'archive',
+                            }.get(folder, folder)
+folderfilter = lambda folder: folder in ['INBOX',
+                                         '[Gmail]/All Mail',
+                                         '[Gmail]/Sent Mail',
+                                         '[Gmail]/Drafts',
+                                         '[Gmail]/Starred',
+					 '[Gmail]/Trash']
+
+[Repository gmaillocal-personal]
+type = GmailMaildir
+localfolders = ~/mail/gmail-personal
+nametrans = lambda folder: {'drafts':  '[Gmail]/Drafts',
+                            'inbox':   'INBOX',
+                            'sent':    '[Gmail]/Sent Mail',
+                            'flagged': '[Gmail]/Starred',
+			    'trash':   '[Gmail]/Trash',
+                            'archive': '[Gmail]/All Mail',
+                            }.get(folder, folder)

@@ -1,0 +1,71 @@
+# ~/.mutt/mailcap
+#
+# this uses the view_attachment script found in ~/.mutt/view_attachment.sh
+#
+# this is meant for an OS X system
+
+# MS Excel
+# this will use the default xls spreadsheet handler from open
+application/x-msexcel; /Users/natpen/.mutt/view_attachment.sh %s
+application/ms-exc; /Users/natpen/.mutt/view_attachment.sh %s
+application/excel; /Users/natpen/.mutt/view_attachment.sh %s
+application/msexcel; /Users/natpen/.mutt/view_attachment.sh %s
+application/vnd.ms-exc; /Users/natpen/.mutt/view_attachment.sh %s
+application/vnd.ms-excel; /Users/natpen/.mutt/view_attachment.sh %s
+
+# MS Word
+# use textedit to open .doc files as it's more light-weight
+application/msword; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/TextEdit.app'
+
+#
+# for Star/OpenOffice stuff, use NeoOffice/J
+#
+# Star/Open Office Writer
+application/vnd.sun.xml.writer; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.sun.xml.writer.global; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.stardivision.writer; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.stardivision.writer-global; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/x-starwriter; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.sun.xml.writer.template; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+
+# Star/Open Office Calc
+application/vnd.sun.xml.calc; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.stardivision.calc; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/x-starcalc; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.sun.xml.calc.template; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+
+# Star/Open Office Draw
+application/vnd.sun.xml.draw; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.stardivision.draw; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/x-stardraw; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.sun.xml.draw.template; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+
+# Star/Open Office Math
+application/vnd.sun.xml.math; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.stardivision.math; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/x-starmath; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+
+application/vnd.sun.xml.writer; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+
+# Star/Open Office Impress
+application/x-starimpress; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.sun.xml.impress.template; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.sun.xml.impress; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.stardivision.impress; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+application/vnd.stardivision.impress-packed; /Users/natpen/.mutt/view_attachment.sh %s "-" '/Applications/NeoOfficeJ.app'
+
+# Images
+image/jpeg; /Users/natpen/.mutt/view_attachment.sh %s
+image/pjpeg; /Users/natpen/.mutt/view_attachment.sh %s
+image/png; /Users/natpen/.mutt/view_attachment.sh %s
+image/gif; /Users/natpen/.mutt/view_attachment.sh %s
+
+# PDF
+application/pdf; /Users/natpen/.mutt/view_attachment.sh %s pdf
+
+# HTML
+# text/html; elinks -force-html %s
+text/html; ~/.mutt/view_attachment.sh %s html
+
+# Unidentified.
+application/octet-stream; /Users/natpen/.mutt/view_attachment.sh %s "-"

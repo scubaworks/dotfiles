@@ -1,0 +1,58 @@
+# your project folder that we can `c [tab]` to
+export PROJECTS=~/code
+
+# shortcut to this dotfiles path is $ZSH
+export ZSH=$PROJECTS/dotfiles
+
+# Stash your environment variables in ~/.localrc. This means they'll stay out
+# of your main dotfiles repository (which may be public, like this one), but
+# you'll have access to them in your scripts.
+if [[ -a ~/.localrc ]]
+then
+  source ~/.localrc
+fi
+
+fpath=( $ZSH $fpath )
+
+autoload -U promptinit && promptinit
+prompt pure
+
+# all of our zsh files
+typeset -U config_files
+# config_files=($ZSH/**/*.zsh)
+config_files=($ZSH/**/*.zsh~$ZSH/zsh-syntax-highlighting/*~$ZSH/pure/*)
+
+# load the path files
+for file in ${(M)config_files:#*/path.zsh}
+do
+  source $file
+done
+
+# load everything but the path and completion files
+for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
+do
+  source $file
+done
+
+# initialize autocomplete here, otherwise functions won't be loaded
+autoload -U compinit
+compinit
+
+setopt autocd
+setopt extendedglob
+
+export CLICOLOR=1
+
+# load every completion after autocomplete loads
+for file in ${(M)config_files:#*/completion.zsh}
+do
+  source $file
+done
+
+source $ZSH/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+unset config_files
+
+if command -v fasd >/dev/null 2>&1; then
+  eval "$(fasd --init zsh-hook zsh-ccomp zsh-ccomp-install zsh-wcomp zsh-wcomp-install posix-alias)"
+fi

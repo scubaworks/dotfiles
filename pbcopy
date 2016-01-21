@@ -1,0 +1,17 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "origin"]
+	url = git@bitbucket.org:natpen/dotfiles.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[submodule "pure"]
+	url = https://github.com/sindresorhus/pure
+[submodule "zsh-syntax-highlighting"]
+	url = https://github.com/zsh-users/zsh-syntax-highlighting

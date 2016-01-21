@@ -1,0 +1,17 @@
+location:New York,US
+fetch_cmd:curl -sf
+forecast:0
+units:metric
+ansi:true
+daylight:true
+dateformat:%a %b %d
+timeformat:%R
+
+greeting_text:Aktuelles Wetter in
+humidity_text:Luftfeuchtigkeit
+pressure_text:Luftdruck
+sunrise_text:Sonnenaufgang
+sunset_text:Sonnenuntergang
+
+background:\033[34m
+text:\033[37;1m
