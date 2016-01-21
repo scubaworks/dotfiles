@@ -1,5 +1,5 @@
 *~
-mutt/.mutt/temp/
-mutt/.mutt/cache/
+mail/mutt/.mutt/temp/
+mail/mutt/.mutt/cache/
 
 git/gitconfig.symlink
