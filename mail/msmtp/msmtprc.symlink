@@ -2,7 +2,7 @@ defaults
 auth on
 tls on
 tls_starttls on
-tls_trust_file /Users/natpen/git/dotfiles/gmail-cert.pem
+tls_trust_file $ZSH/mail/gmail-cert.pem
 logfile ~/.msmtp.log
 
 account gmail-personal
