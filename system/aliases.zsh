@@ -1,6 +1,11 @@
 alias less='less -R'
 alias grep='grep --color=auto'
-alias ..='cd ../'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias .......='cd ../../../../../..'
 alias wthr='ansiweather'
 
 # grc overides for ls
