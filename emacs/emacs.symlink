@@ -24,5 +24,11 @@
    kept-old-versions 6
    version-control t)        ; use versioned backups
 
+(setq ido-enable-flex-matching t)
+(setq ido-everywhere t)
+(ido-mode 1)
+(setq ido-create-new-buffer 'always)
+(setq ido-ignore-extensions t)
+
 (server-start)
 (add-to-list 'auto-mode-alist '("/mutt" . mail-mode))
