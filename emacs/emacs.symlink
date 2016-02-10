@@ -42,5 +42,11 @@
         (if selective-display nil (or col 1))))))
 (global-set-key [(M C i)] 'nap-toggle-fold)
 
+(add-hook 'js-mode-hook
+  (lambda ()
+    (setq indent-tabs-mode t)
+    (setq tab-width 2)
+    (setq js-indent-level 2)))
+
 (server-start)
 (add-to-list 'auto-mode-alist '("/mutt" . mail-mode))
