@@ -29,7 +29,7 @@ alias got='git '
 alias get='git '
 alias glog='git log --oneline'
 
-export NVM_DIR="/Users/nataliependragon/.nvm"
+export NVM_DIR="/Users/stevenfusaro/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
