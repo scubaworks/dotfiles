@@ -3,15 +3,14 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'homebrew/bundle'
 
-
 brew 'ack'
-
+brew 'tig'
 brew 'readline'
 brew 'git-extras'
 brew 'spaceman-diff'
 brew 'the_silver_searcher'
+brew 'ansiweather'
 
-#brew 'ansiweather'
 #brew 'ansible'
 #brew 'coreutils'
 #brew 'fasd'
@@ -33,11 +32,14 @@ brew 'the_silver_searcher'
 #brew 'wget'
 #brew 'youtube-dl'
 
+
+
 cask 'skitch'
 cask 'evernote'
 cask 'firefox'
 cask 'google-chrome'
 cask 'slack'
+
 #cask '1password'
 #cask 'atom'
 #cask 'caffeine'
