@@ -1,5 +1,5 @@
 export PS1="\w $ "
-export EDITOR=emacs
+export EDITOR=vim
 
 # MISC
 alias less='less -r'
