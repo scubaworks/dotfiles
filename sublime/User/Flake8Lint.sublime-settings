@@ -1,0 +1,6 @@
+{
+	"popup": false,
+	"pep8": false,
+	"ignore": ["I"],
+	"pydocstyle": false,
+}

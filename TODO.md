@@ -6,3 +6,5 @@
 - ipdb
 
 sudo pip3 install flake8
+
+Sublime: https://packagecontrol.io/docs/syncing

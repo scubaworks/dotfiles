@@ -1,0 +1,28 @@
+{
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (Flake8Lint) (SL).tmTheme",
+	"draw_white_space": "all",
+	"extra_file_exclude_patterns":
+	[
+	],
+	"extra_folder_exclude_patterns":
+	[
+	],
+	"file_exclude_patterns":
+	[
+	],
+	"folder_exclude_patterns":
+	[
+	],
+	"font_size": 15,
+	"ignored_packages":
+	[
+		"AngularJS",
+		"Gitignored File Excluder",
+		"Jasmine JS",
+		"JavaScript",
+		"JSHint",
+		"JSHint Gutter",
+		"Python Flake8 Lint",
+		"Vintage"
+	]
+}
