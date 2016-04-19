@@ -1,7 +1,0 @@
-set sendmail="/usr/local/bin/msmtp"
-set use_from=yes
-set realname="Natalie Pendragon"
-set from=natalie.pendragon@gmail.com
-set envelope_from=yes
-set sendmail_wait = 0
-unset record
