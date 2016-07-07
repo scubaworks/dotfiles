@@ -14,8 +14,10 @@ Other things I use that won't be covered here:
 	- http://www.macupdate.com/app/mac/42632/bartender
 	- https://bjango.com/mac/istatmenus/
 	- Siel is something I used to remap my caplocks to backspace
+
 	- FlyCut
 	- github desktop
-	- iStat menus
 	- JSON Query
 	- Witch
+
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
