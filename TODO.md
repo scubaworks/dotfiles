@@ -20,4 +20,3 @@ Other things I use that won't be covered here:
 	- JSON Query
 	- Witch
 
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime

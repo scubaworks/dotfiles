@@ -9,11 +9,17 @@
 	],
 	"file_exclude_patterns":
 	[
+		"*.pyc"
 	],
 	"folder_exclude_patterns":
 	[
+		"locale",
+		"node_modules",
+		"build",
+		".*",
+		"__pycache__"
 	],
-	"font_size": 14,
+	"font_size": 15,
 	"ignored_packages":
 	[
 		"AngularJS",

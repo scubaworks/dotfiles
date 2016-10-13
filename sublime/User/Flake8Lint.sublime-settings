@@ -3,5 +3,5 @@
 	"pep8": true,
 	"ignore": ["I", "T002"],
 	"pydocstyle": false,
-	"pep8_max_line_length": 100
+	"pep8_max_line_length": 120
 }
