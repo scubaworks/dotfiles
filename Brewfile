@@ -10,6 +10,7 @@ brew 'git-extras'
 brew 'spaceman-diff'
 brew 'the_silver_searcher'
 brew 'ansiweather'
+brew 'tmux'
 
 #brew 'ansible'
 #brew 'coreutils'
