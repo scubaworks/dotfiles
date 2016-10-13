@@ -23,8 +23,11 @@ prompt pure
 
 # all of our zsh files
 typeset -U config_files
-# config_files=($ZSH/**/*.zsh)
+#config_files=()
+#config_files=($ZSH/**/*.zsh)
 config_files=($ZSH/**/*.zsh~$ZSH/zsh-syntax-highlighting/*~$ZSH/pure/*)
+
+
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
@@ -72,4 +75,4 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-source /usr/local/bin/virtualenvwrapper.sh
+#source /usr/local/bin/virtualenvwrapper.sh
